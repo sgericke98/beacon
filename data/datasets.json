@@ -1,0 +1,38 @@
+[
+  {
+    "id": "opportunities",
+    "label": "Opportunities",
+    "rowCount": 60,
+    "updatedAt": "2025-01-12T00:00:00.000Z"
+  },
+  {
+    "id": "quotes",
+    "label": "Quotes",
+    "rowCount": 60,
+    "updatedAt": "2025-01-13T00:00:00.000Z"
+  },
+  {
+    "id": "invoices",
+    "label": "Invoices",
+    "rowCount": 60,
+    "updatedAt": "2025-01-15T00:00:00.000Z"
+  },
+  {
+    "id": "payments",
+    "label": "Payments",
+    "rowCount": 60,
+    "updatedAt": "2025-01-16T00:00:00.000Z"
+  },
+  {
+    "id": "accounts",
+    "label": "Accounts",
+    "rowCount": 8,
+    "updatedAt": "2025-01-10T00:00:00.000Z"
+  },
+  {
+    "id": "products",
+    "label": "Products",
+    "rowCount": 24,
+    "updatedAt": "2025-01-08T00:00:00.000Z"
+  }
+]
