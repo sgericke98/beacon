@@ -1,0 +1,542 @@
+[
+  {
+    "id": "INV-1001",
+    "quoteId": "QT-1001",
+    "invoiceNumber": "INV-1001",
+    "status": "Paid",
+    "amount": 27316.695470446433,
+    "issuedAt": "2024-02-19T00:00:00.000Z",
+    "dueAt": "2024-03-20T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1002",
+    "quoteId": "QT-1002",
+    "invoiceNumber": "INV-1002",
+    "status": "Paid",
+    "amount": 84796.03416895124,
+    "issuedAt": "2024-04-06T00:00:00.000Z",
+    "dueAt": "2024-05-06T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1003",
+    "quoteId": "QT-1003",
+    "invoiceNumber": "INV-1003",
+    "status": "Paid",
+    "amount": 75574.58568043874,
+    "issuedAt": "2024-03-18T00:00:00.000Z",
+    "dueAt": "2024-04-17T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1004",
+    "quoteId": "QT-1004",
+    "invoiceNumber": "INV-1004",
+    "status": "Paid",
+    "amount": 57043.13834491571,
+    "issuedAt": "2024-06-24T00:00:00.000Z",
+    "dueAt": "2024-07-24T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1005",
+    "quoteId": "QT-1005",
+    "invoiceNumber": "INV-1005",
+    "status": "Paid",
+    "amount": 18015.705082546643,
+    "issuedAt": "2024-07-20T00:00:00.000Z",
+    "dueAt": "2024-08-19T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1006",
+    "quoteId": "QT-1006",
+    "invoiceNumber": "INV-1006",
+    "status": "Paid",
+    "amount": 49431.60208398905,
+    "issuedAt": "2024-11-22T00:00:00.000Z",
+    "dueAt": "2024-12-22T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1007",
+    "quoteId": "QT-1007",
+    "invoiceNumber": "INV-1007",
+    "status": "Paid",
+    "amount": 70410.1628388289,
+    "issuedAt": "2024-05-05T00:00:00.000Z",
+    "dueAt": "2024-06-04T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1008",
+    "quoteId": "QT-1008",
+    "invoiceNumber": "INV-1008",
+    "status": "Paid",
+    "amount": 95612.41897655504,
+    "issuedAt": "2024-05-04T00:00:00.000Z",
+    "dueAt": "2024-06-03T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1009",
+    "quoteId": "QT-1009",
+    "invoiceNumber": "INV-1009",
+    "status": "Paid",
+    "amount": 62891.37452290056,
+    "issuedAt": "2024-09-01T00:00:00.000Z",
+    "dueAt": "2024-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1010",
+    "quoteId": "QT-1010",
+    "invoiceNumber": "INV-1010",
+    "status": "Paid",
+    "amount": 55366.83154932859,
+    "issuedAt": "2024-05-25T00:00:00.000Z",
+    "dueAt": "2024-06-24T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1011",
+    "quoteId": "QT-1011",
+    "invoiceNumber": "INV-1011",
+    "status": "Paid",
+    "amount": 89623.3639969438,
+    "issuedAt": "2024-05-29T00:00:00.000Z",
+    "dueAt": "2024-06-28T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1012",
+    "quoteId": "QT-1012",
+    "invoiceNumber": "INV-1012",
+    "status": "Paid",
+    "amount": 95960.15815179903,
+    "issuedAt": "2024-09-24T00:00:00.000Z",
+    "dueAt": "2024-10-24T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1013",
+    "quoteId": "QT-1013",
+    "invoiceNumber": "INV-1013",
+    "status": "Paid",
+    "amount": 59457.930942315536,
+    "issuedAt": "2024-04-17T00:00:00.000Z",
+    "dueAt": "2024-05-17T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1014",
+    "quoteId": "QT-1014",
+    "invoiceNumber": "INV-1014",
+    "status": "Paid",
+    "amount": 65250.705458639844,
+    "issuedAt": "2024-06-10T00:00:00.000Z",
+    "dueAt": "2024-07-10T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1015",
+    "quoteId": "QT-1015",
+    "invoiceNumber": "INV-1015",
+    "status": "Open",
+    "amount": 55374.265380769284,
+    "issuedAt": "2025-01-05T00:00:00.000Z",
+    "dueAt": "2025-02-04T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1016",
+    "quoteId": "QT-1016",
+    "invoiceNumber": "INV-1016",
+    "status": "Paid",
+    "amount": 88949.17820306883,
+    "issuedAt": "2024-02-27T00:00:00.000Z",
+    "dueAt": "2024-03-28T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1017",
+    "quoteId": "QT-1017",
+    "invoiceNumber": "INV-1017",
+    "status": "Paid",
+    "amount": 80556.80154849011,
+    "issuedAt": "2024-09-14T00:00:00.000Z",
+    "dueAt": "2024-10-14T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1018",
+    "quoteId": "QT-1018",
+    "invoiceNumber": "INV-1018",
+    "status": "Paid",
+    "amount": 91538.00972248243,
+    "issuedAt": "2024-06-06T00:00:00.000Z",
+    "dueAt": "2024-07-06T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1019",
+    "quoteId": "QT-1019",
+    "invoiceNumber": "INV-1019",
+    "status": "Paid",
+    "amount": 82090.13055672415,
+    "issuedAt": "2024-04-25T00:00:00.000Z",
+    "dueAt": "2024-05-25T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1020",
+    "quoteId": "QT-1020",
+    "invoiceNumber": "INV-1020",
+    "status": "Open",
+    "amount": 95146.11893984034,
+    "issuedAt": "2024-06-04T00:00:00.000Z",
+    "dueAt": "2024-07-04T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1021",
+    "quoteId": "QT-1021",
+    "invoiceNumber": "INV-1021",
+    "status": "Paid",
+    "amount": 28220.00091697182,
+    "issuedAt": "2024-02-25T00:00:00.000Z",
+    "dueAt": "2024-03-26T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1022",
+    "quoteId": "QT-1022",
+    "invoiceNumber": "INV-1022",
+    "status": "Paid",
+    "amount": 45140.117539288585,
+    "issuedAt": "2024-10-15T00:00:00.000Z",
+    "dueAt": "2024-11-14T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1023",
+    "quoteId": "QT-1023",
+    "invoiceNumber": "INV-1023",
+    "status": "Paid",
+    "amount": 49300.82945770475,
+    "issuedAt": "2024-12-09T00:00:00.000Z",
+    "dueAt": "2025-01-08T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1024",
+    "quoteId": "QT-1024",
+    "invoiceNumber": "INV-1024",
+    "status": "Paid",
+    "amount": 90459.56246584147,
+    "issuedAt": "2024-05-27T00:00:00.000Z",
+    "dueAt": "2024-06-26T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1025",
+    "quoteId": "QT-1025",
+    "invoiceNumber": "INV-1025",
+    "status": "Paid",
+    "amount": 96193.0917182547,
+    "issuedAt": "2024-04-14T00:00:00.000Z",
+    "dueAt": "2024-05-14T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1026",
+    "quoteId": "QT-1026",
+    "invoiceNumber": "INV-1026",
+    "status": "Paid",
+    "amount": 79258.15341203767,
+    "issuedAt": "2024-04-22T00:00:00.000Z",
+    "dueAt": "2024-05-22T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1027",
+    "quoteId": "QT-1027",
+    "invoiceNumber": "INV-1027",
+    "status": "Paid",
+    "amount": 15638.370278190234,
+    "issuedAt": "2025-01-18T00:00:00.000Z",
+    "dueAt": "2025-02-17T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1028",
+    "quoteId": "QT-1028",
+    "invoiceNumber": "INV-1028",
+    "status": "Paid",
+    "amount": 29810.318004824516,
+    "issuedAt": "2024-06-14T00:00:00.000Z",
+    "dueAt": "2024-07-14T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1029",
+    "quoteId": "QT-1029",
+    "invoiceNumber": "INV-1029",
+    "status": "Paid",
+    "amount": 16313.267764280798,
+    "issuedAt": "2024-11-20T00:00:00.000Z",
+    "dueAt": "2024-12-20T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1030",
+    "quoteId": "QT-1030",
+    "invoiceNumber": "INV-1030",
+    "status": "Paid",
+    "amount": 83718.4111694986,
+    "issuedAt": "2024-04-26T00:00:00.000Z",
+    "dueAt": "2024-05-26T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1031",
+    "quoteId": "QT-1031",
+    "invoiceNumber": "INV-1031",
+    "status": "Paid",
+    "amount": 38515.285344273114,
+    "issuedAt": "2024-04-16T00:00:00.000Z",
+    "dueAt": "2024-05-16T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1032",
+    "quoteId": "QT-1032",
+    "invoiceNumber": "INV-1032",
+    "status": "Open",
+    "amount": 65016.5144956126,
+    "issuedAt": "2024-10-13T00:00:00.000Z",
+    "dueAt": "2024-11-12T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1033",
+    "quoteId": "QT-1033",
+    "invoiceNumber": "INV-1033",
+    "status": "Paid",
+    "amount": 36893.696693130485,
+    "issuedAt": "2024-06-06T00:00:00.000Z",
+    "dueAt": "2024-07-06T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1034",
+    "quoteId": "QT-1034",
+    "invoiceNumber": "INV-1034",
+    "status": "Paid",
+    "amount": 51334.57914478385,
+    "issuedAt": "2024-10-06T00:00:00.000Z",
+    "dueAt": "2024-11-05T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1035",
+    "quoteId": "QT-1035",
+    "invoiceNumber": "INV-1035",
+    "status": "Paid",
+    "amount": 82669.5270340401,
+    "issuedAt": "2024-12-01T00:00:00.000Z",
+    "dueAt": "2024-12-31T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1036",
+    "quoteId": "QT-1036",
+    "invoiceNumber": "INV-1036",
+    "status": "Open",
+    "amount": 17117.416492272558,
+    "issuedAt": "2024-07-26T00:00:00.000Z",
+    "dueAt": "2024-08-25T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1037",
+    "quoteId": "QT-1037",
+    "invoiceNumber": "INV-1037",
+    "status": "Paid",
+    "amount": 91220.20319713764,
+    "issuedAt": "2024-11-10T00:00:00.000Z",
+    "dueAt": "2024-12-10T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1038",
+    "quoteId": "QT-1038",
+    "invoiceNumber": "INV-1038",
+    "status": "Paid",
+    "amount": 86567.45610476701,
+    "issuedAt": "2024-05-10T00:00:00.000Z",
+    "dueAt": "2024-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1039",
+    "quoteId": "QT-1039",
+    "invoiceNumber": "INV-1039",
+    "status": "Paid",
+    "amount": 94875.31662999681,
+    "issuedAt": "2024-09-22T00:00:00.000Z",
+    "dueAt": "2024-10-22T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1040",
+    "quoteId": "QT-1040",
+    "invoiceNumber": "INV-1040",
+    "status": "Paid",
+    "amount": 84499.94133432762,
+    "issuedAt": "2025-01-21T00:00:00.000Z",
+    "dueAt": "2025-02-20T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1041",
+    "quoteId": "QT-1041",
+    "invoiceNumber": "INV-1041",
+    "status": "Paid",
+    "amount": 31702.218433425034,
+    "issuedAt": "2024-12-24T00:00:00.000Z",
+    "dueAt": "2025-01-23T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1042",
+    "quoteId": "QT-1042",
+    "invoiceNumber": "INV-1042",
+    "status": "Paid",
+    "amount": 40604.652983994834,
+    "issuedAt": "2024-12-10T00:00:00.000Z",
+    "dueAt": "2025-01-09T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1043",
+    "quoteId": "QT-1043",
+    "invoiceNumber": "INV-1043",
+    "status": "Paid",
+    "amount": 11969.335039573103,
+    "issuedAt": "2024-12-28T00:00:00.000Z",
+    "dueAt": "2025-01-27T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1044",
+    "quoteId": "QT-1044",
+    "invoiceNumber": "INV-1044",
+    "status": "Paid",
+    "amount": 20137.077729135824,
+    "issuedAt": "2024-07-03T00:00:00.000Z",
+    "dueAt": "2024-08-02T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1045",
+    "quoteId": "QT-1045",
+    "invoiceNumber": "INV-1045",
+    "status": "Open",
+    "amount": 38276.630837218494,
+    "issuedAt": "2024-10-04T00:00:00.000Z",
+    "dueAt": "2024-11-03T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1046",
+    "quoteId": "QT-1046",
+    "invoiceNumber": "INV-1046",
+    "status": "Paid",
+    "amount": 34985.739091727635,
+    "issuedAt": "2024-05-14T00:00:00.000Z",
+    "dueAt": "2024-06-13T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1047",
+    "quoteId": "QT-1047",
+    "invoiceNumber": "INV-1047",
+    "status": "Paid",
+    "amount": 67165.49461243626,
+    "issuedAt": "2024-06-14T00:00:00.000Z",
+    "dueAt": "2024-07-14T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1048",
+    "quoteId": "QT-1048",
+    "invoiceNumber": "INV-1048",
+    "status": "Paid",
+    "amount": 24496.86974210373,
+    "issuedAt": "2024-07-31T00:00:00.000Z",
+    "dueAt": "2024-08-30T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1049",
+    "quoteId": "QT-1049",
+    "invoiceNumber": "INV-1049",
+    "status": "Paid",
+    "amount": 55742.822560028006,
+    "issuedAt": "2024-04-13T00:00:00.000Z",
+    "dueAt": "2024-05-13T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1050",
+    "quoteId": "QT-1050",
+    "invoiceNumber": "INV-1050",
+    "status": "Paid",
+    "amount": 40386.37815446162,
+    "issuedAt": "2024-09-24T00:00:00.000Z",
+    "dueAt": "2024-10-24T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1051",
+    "quoteId": "QT-1051",
+    "invoiceNumber": "INV-1051",
+    "status": "Paid",
+    "amount": 70310.37766295427,
+    "issuedAt": "2024-10-22T00:00:00.000Z",
+    "dueAt": "2024-11-21T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1052",
+    "quoteId": "QT-1052",
+    "invoiceNumber": "INV-1052",
+    "status": "Paid",
+    "amount": 89258.50819153572,
+    "issuedAt": "2024-04-11T00:00:00.000Z",
+    "dueAt": "2024-05-11T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1053",
+    "quoteId": "QT-1053",
+    "invoiceNumber": "INV-1053",
+    "status": "Paid",
+    "amount": 89484.83756742052,
+    "issuedAt": "2024-10-31T00:00:00.000Z",
+    "dueAt": "2024-11-30T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1054",
+    "quoteId": "QT-1054",
+    "invoiceNumber": "INV-1054",
+    "status": "Paid",
+    "amount": 40888.61144301352,
+    "issuedAt": "2024-06-03T00:00:00.000Z",
+    "dueAt": "2024-07-03T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1055",
+    "quoteId": "QT-1055",
+    "invoiceNumber": "INV-1055",
+    "status": "Paid",
+    "amount": 50591.83819213401,
+    "issuedAt": "2024-09-15T00:00:00.000Z",
+    "dueAt": "2024-10-15T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1056",
+    "quoteId": "QT-1056",
+    "invoiceNumber": "INV-1056",
+    "status": "Paid",
+    "amount": 79465.83563607543,
+    "issuedAt": "2024-01-19T00:00:00.000Z",
+    "dueAt": "2024-02-18T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1057",
+    "quoteId": "QT-1057",
+    "invoiceNumber": "INV-1057",
+    "status": "Open",
+    "amount": 13337.74416789668,
+    "issuedAt": "2024-03-20T00:00:00.000Z",
+    "dueAt": "2024-04-19T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1058",
+    "quoteId": "QT-1058",
+    "invoiceNumber": "INV-1058",
+    "status": "Paid",
+    "amount": 11509.903368806376,
+    "issuedAt": "2024-02-12T00:00:00.000Z",
+    "dueAt": "2024-03-13T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1059",
+    "quoteId": "QT-1059",
+    "invoiceNumber": "INV-1059",
+    "status": "Paid",
+    "amount": 28751.41163412799,
+    "issuedAt": "2024-08-03T00:00:00.000Z",
+    "dueAt": "2024-09-02T00:00:00.000Z"
+  },
+  {
+    "id": "INV-1060",
+    "quoteId": "QT-1060",
+    "invoiceNumber": "INV-1060",
+    "status": "Paid",
+    "amount": 74280.59840055238,
+    "issuedAt": "2024-05-05T00:00:00.000Z",
+    "dueAt": "2024-06-04T00:00:00.000Z"
+  }
+]

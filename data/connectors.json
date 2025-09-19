@@ -1,0 +1,12 @@
+[
+  {
+    "id": "salesforce",
+    "name": "Salesforce",
+    "status": "not_configured"
+  },
+  {
+    "id": "netsuite",
+    "name": "NetSuite",
+    "status": "not_configured"
+  }
+]
