@@ -1,0 +1,65 @@
+[
+  {
+    "customerId": "C-001",
+    "name": "Northwind Labs",
+    "segment": "Enterprise",
+    "region": "NA",
+    "risk": "Low",
+    "owner": "Taylor H.",
+    "email": "finance@northwindlabs.com"
+  },
+  {
+    "customerId": "C-002",
+    "name": "Globex Retail",
+    "segment": "Enterprise",
+    "region": "EMEA",
+    "risk": "High",
+    "owner": "Dana S.",
+    "email": "ap@globexretail.com"
+  },
+  {
+    "customerId": "C-003",
+    "name": "Acme Holdings",
+    "segment": "Mid-Market",
+    "region": "NA",
+    "risk": "Medium",
+    "owner": "Chris L.",
+    "email": "controller@acmeholdings.com"
+  },
+  {
+    "customerId": "C-004",
+    "name": "Innotech",
+    "segment": "Mid-Market",
+    "region": "APAC",
+    "risk": "Low",
+    "owner": "Jordan P.",
+    "email": "payables@innotech.io"
+  },
+  {
+    "customerId": "C-005",
+    "name": "Blue Horizon",
+    "segment": "Enterprise",
+    "region": "NA",
+    "risk": "Medium",
+    "owner": "Jordan P.",
+    "email": "ar@bluehorizon.ai"
+  },
+  {
+    "customerId": "C-006",
+    "name": "Vertex Analytics",
+    "segment": "Enterprise",
+    "region": "LATAM",
+    "risk": "Critical",
+    "owner": "Taylor H.",
+    "email": "collections@vertexanalytics.com"
+  },
+  {
+    "customerId": "C-007",
+    "name": "Brightline Media",
+    "segment": "Mid-Market",
+    "region": "NA",
+    "risk": "Low",
+    "owner": "Dana S.",
+    "email": "finance@brightlinemedia.co"
+  }
+]

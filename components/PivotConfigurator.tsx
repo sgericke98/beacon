@@ -51,7 +51,6 @@ export function PivotConfigurator({ fields, numericFields, data, initialConfig, 
               fields={config.rows}
               onRemove={(field) => updateConfig({ ...config, rows: config.rows.filter((item) => item !== field) })}
               onDrop={(field) => updateConfig({ ...config, rows: [...config.rows, field] })}
-              zoneType="rows"
             />
           </Section>
           <Section title="Columns">
@@ -59,7 +58,6 @@ export function PivotConfigurator({ fields, numericFields, data, initialConfig, 
               fields={config.cols}
               onRemove={(field) => updateConfig({ ...config, cols: config.cols.filter((item) => item !== field) })}
               onDrop={(field) => updateConfig({ ...config, cols: [...config.cols, field] })}
-              zoneType="cols"
             />
           </Section>
           <Section title="Values">
@@ -186,16 +184,14 @@ function DraggableField({ field, onClick }: { field: string; onClick: () => void
   );
 }
 
-function FieldZone({ 
-  fields, 
-  onRemove, 
-  onDrop, 
-  zoneType 
-}: { 
-  fields: string[]; 
+function FieldZone({
+  fields,
+  onRemove,
+  onDrop
+}: {
+  fields: string[];
   onRemove: (field: string) => void;
   onDrop: (field: string) => void;
-  zoneType: string;
 }) {
   const [isDragOver, setIsDragOver] = useState(false);
 
