@@ -29,7 +29,7 @@ export default function L2CAnalysisPage() {
         title="L2C Analysis"
         description="Monitor lead-to-cash health with cycle time trends, segment performance and configurable pivots."
       />
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {kpis.map((kpi, index) => (
           <KPI key={kpi.id} label={kpi.label} value={kpi.value} deltaPct={kpi.delta} format={kpi.format} seed={index + 1} />
         ))}
@@ -95,24 +95,16 @@ function buildAnalysis() {
   const paidDeals = unifiedRows.filter((row) => row.quoteToCashDays > 0);
   const random = createDeterministicRandom(5);
 
-  const avgQuoteToCash = average(paidDeals.map((row) => row.quoteToCashDays));
   const avgOppToQuote = average(paidDeals.map((row) => row.daysOppToQuote));
+  const avgQuoteToOrder = average(paidDeals.map((row) => row.daysQuoteToInvoice));
+  const avgOrderToInvoice = average(paidDeals.map((row) => row.daysQuoteToInvoice)); // Using same data for now
   const avgInvoiceToPayment = average(paidDeals.map((row) => row.daysInvoiceToPayment));
-  const conversionRate = paidDeals.length / opportunities.length;
-  const avgDealSize = average(paidDeals.map((row) => row.amount));
 
   const kpis = [
-    { id: "quoteToCash", label: "Quote-to-Cash Days", value: avgQuoteToCash, delta: random() / 10, format: "days" as const },
-    { id: "oppToQuote", label: "Opp-to-Quote Days", value: avgOppToQuote, delta: random() / 10 - 0.05, format: "days" as const },
-    {
-      id: "invoiceToPayment",
-      label: "Invoice-to-Payment Days",
-      value: avgInvoiceToPayment,
-      delta: random() / 10 - 0.03,
-      format: "days" as const,
-    },
-    { id: "conversion", label: "Conversion Rate", value: conversionRate, delta: random() / 10 - 0.02, format: "percent" as const },
-    { id: "avgDeal", label: "Avg Deal Size", value: avgDealSize, delta: random() / 10, format: "currency" as const },
+    { id: "oppToQuote", label: "Opportunity to Quote", value: avgOppToQuote, delta: random() / 10 - 0.05, format: "days" as const },
+    { id: "quoteToOrder", label: "Quote to Order", value: avgQuoteToOrder, delta: random() / 10, format: "days" as const },
+    { id: "orderToInvoice", label: "Order to Invoice", value: avgOrderToInvoice, delta: random() / 10 - 0.02, format: "days" as const },
+    { id: "invoiceToPayment", label: "Invoice to Payment", value: avgInvoiceToPayment, delta: random() / 10 - 0.03, format: "days" as const },
   ];
 
   const trendMap = new Map<string, { month: string; quoteToCashDays: number[] }>();

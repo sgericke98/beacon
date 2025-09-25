@@ -50,12 +50,16 @@ export function PivotConfigurator({ fields, numericFields, data, initialConfig, 
             <FieldZone
               fields={config.rows}
               onRemove={(field) => updateConfig({ ...config, rows: config.rows.filter((item) => item !== field) })}
+              onDrop={(field) => updateConfig({ ...config, rows: [...config.rows, field] })}
+              zoneType="rows"
             />
           </Section>
           <Section title="Columns">
             <FieldZone
               fields={config.cols}
               onRemove={(field) => updateConfig({ ...config, cols: config.cols.filter((item) => item !== field) })}
+              onDrop={(field) => updateConfig({ ...config, cols: [...config.cols, field] })}
+              zoneType="cols"
             />
           </Section>
           <Section title="Values">
@@ -93,9 +97,7 @@ export function PivotConfigurator({ fields, numericFields, data, initialConfig, 
           <Section title="Available Fields">
             <div className="flex flex-wrap gap-2">
               {availableFields.map((field) => (
-                <Badge key={field} variant="outline" className="cursor-pointer px-3 py-1" onClick={() => addField(field)}>
-                  {field}
-                </Badge>
+                <DraggableField key={field} field={field} onClick={() => addField(field)} />
               ))}
             </div>
           </Section>
@@ -155,20 +157,104 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-function FieldZone({ fields, onRemove }: { fields: string[]; onRemove: (field: string) => void }) {
-  if (!fields.length) {
-    return <p className="text-xs">Drop fields here</p>;
-  }
+function DraggableField({ field, onClick }: { field: string; onClick: () => void }) {
+  const [isDragging, setIsDragging] = useState(false);
+
+  const handleDragStart = (e: React.DragEvent) => {
+    setIsDragging(true);
+    e.dataTransfer.setData("text/plain", field);
+    e.dataTransfer.effectAllowed = "move";
+  };
+
+  const handleDragEnd = () => {
+    setIsDragging(false);
+  };
+
   return (
-    <div className="flex flex-wrap gap-2">
-      {fields.map((field) => (
-        <Badge key={field} variant="outline" className="flex items-center gap-2 px-3 py-1">
-          {field}
-          <button type="button" onClick={() => onRemove(field)} className="text-xs text-muted-foreground">
-            ×
-          </button>
-        </Badge>
-      ))}
+    <Badge
+      variant="outline"
+      className={`cursor-grab px-3 py-1 transition-all duration-200 hover:bg-accent hover:text-accent-foreground ${
+        isDragging ? "opacity-50 scale-95" : ""
+      }`}
+      draggable
+      onDragStart={handleDragStart}
+      onDragEnd={handleDragEnd}
+      onClick={onClick}
+    >
+      {field}
+    </Badge>
+  );
+}
+
+function FieldZone({ 
+  fields, 
+  onRemove, 
+  onDrop, 
+  zoneType 
+}: { 
+  fields: string[]; 
+  onRemove: (field: string) => void;
+  onDrop: (field: string) => void;
+  zoneType: string;
+}) {
+  const [isDragOver, setIsDragOver] = useState(false);
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragOver(true);
+  };
+
+  const handleDragLeave = () => {
+    setIsDragOver(false);
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragOver(false);
+    const field = e.dataTransfer.getData("text/plain");
+    if (field) {
+      onDrop(field);
+    }
+  };
+
+  if (!fields.length) {
+    return (
+      <div
+        className={`min-h-[40px] rounded-md border-2 border-dashed p-3 text-center text-xs transition-colors ${
+          isDragOver 
+            ? "border-primary bg-primary/5" 
+            : "border-border text-muted-foreground"
+        }`}
+        onDragOver={handleDragOver}
+        onDragLeave={handleDragLeave}
+        onDrop={handleDrop}
+      >
+        Drop fields here
+      </div>
+    );
+  }
+  
+  return (
+    <div
+      className={`min-h-[40px] rounded-md border-2 border-dashed p-3 transition-colors ${
+        isDragOver 
+          ? "border-primary bg-primary/5" 
+          : "border-border"
+      }`}
+      onDragOver={handleDragOver}
+      onDragLeave={handleDragLeave}
+      onDrop={handleDrop}
+    >
+      <div className="flex flex-wrap gap-2">
+        {fields.map((field) => (
+          <Badge key={field} variant="outline" className="flex items-center gap-2 px-3 py-1">
+            {field}
+            <button type="button" onClick={() => onRemove(field)} className="text-xs text-muted-foreground hover:text-foreground">
+              ×
+            </button>
+          </Badge>
+        ))}
+      </div>
     </div>
   );
 }

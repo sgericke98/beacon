@@ -3,12 +3,12 @@ import type { HTMLAttributes } from "react";
 type BadgeVariant = "default" | "secondary" | "outline" | "success" | "warning" | "destructive";
 
 const variantClasses: Record<BadgeVariant, string> = {
-  default: "bg-foreground text-background",
-  secondary: "bg-muted text-muted-foreground",
+  default: "bg-primary text-primary-foreground",
+  secondary: "bg-secondary text-secondary-foreground",
   outline: "border border-border text-foreground",
-  success: "bg-green-500/15 text-green-600",
-  warning: "bg-amber-500/15 text-amber-600",
-  destructive: "bg-red-500/15 text-red-600",
+  success: "bg-green-500/15 text-green-600 dark:bg-green-500/20 dark:text-green-400",
+  warning: "bg-amber-500/15 text-amber-600 dark:bg-amber-500/20 dark:text-amber-400",
+  destructive: "bg-destructive/15 text-destructive dark:bg-destructive/20 dark:text-destructive-foreground",
 };
 
 export function Badge({ className = "", variant = "default", ...props }: HTMLAttributes<HTMLSpanElement> & { variant?: BadgeVariant }) {
