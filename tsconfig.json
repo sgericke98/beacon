@@ -22,7 +22,9 @@
       "@/*": ["./*"],
       "lucide-react": ["./lib/lucide-react"],
       "zustand": ["./lib/zustand"],
-      "next-themes": ["./lib/next-themes"]
+      "next-themes": ["./lib/next-themes"],
+      "framer-motion": ["./lib/framer-motion"],
+      "recharts": ["./lib/recharts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

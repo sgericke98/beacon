@@ -1,0 +1,29 @@
+[
+  {
+    "name": "SignalForge",
+    "region": "NA",
+    "positioning": "Workflow automation for RevOps",
+    "winRate": 0.42,
+    "notableClients": ["Globex", "Northwind"],
+    "strengths": ["Native CRM integrations", "Usage-based pricing"],
+    "weaknesses": ["Limited AI", "Sparse analytics"]
+  },
+  {
+    "name": "PulseIQ",
+    "region": "EMEA",
+    "positioning": "Insights for GTM leaders",
+    "winRate": 0.36,
+    "notableClients": ["Innotech", "Blue Horizon"],
+    "strengths": ["Battle-tested playbooks", "EMEA partner network"],
+    "weaknesses": ["Manual onboarding", "Rigid dashboards"]
+  },
+  {
+    "name": "RevStream",
+    "region": "Global",
+    "positioning": "RevOps data fabric",
+    "winRate": 0.29,
+    "notableClients": ["Acme", "Vertex"],
+    "strengths": ["Data coverage", "Pro services"],
+    "weaknesses": ["Slow roadmap", "High services mix"]
+  }
+]

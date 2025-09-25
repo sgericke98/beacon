@@ -1,0 +1,15 @@
+[
+  { "id": "A-001", "name": "Acme Corp", "domain": "acme.com", "parentId": null, "region": "NA" },
+  { "id": "A-002", "name": "Acme Corp US", "domain": "acme.com", "parentId": "A-001", "region": "NA" },
+  { "id": "A-003", "name": "Acme Corp EMEA", "domain": "acme.co.uk", "parentId": "A-001", "region": "EMEA" },
+  { "id": "A-004", "name": "Globex", "domain": "globex.com", "parentId": null, "region": "EMEA" },
+  { "id": "A-005", "name": "Globex Retail", "domain": "globexretail.com", "parentId": "A-004", "region": "EMEA" },
+  { "id": "A-006", "name": "Globex Retail EU", "domain": "globexretail.com", "parentId": "A-005", "region": "EMEA" },
+  { "id": "A-007", "name": "Vertex Analytics", "domain": "vertexanalytics.com", "parentId": null, "region": "LATAM" },
+  { "id": "A-008", "name": "Vertex Analytics LATAM", "domain": "vertexanalytics.com", "parentId": "A-007", "region": "LATAM" },
+  { "id": "A-009", "name": "Northwind Labs", "domain": "northwindlabs.com", "parentId": null, "region": "NA" },
+  { "id": "A-010", "name": "Northwind Research", "domain": "northwindlabs.com", "parentId": "A-009", "region": "NA" },
+  { "id": "A-011", "name": "Blue Horizon", "domain": "bluehorizon.ai", "parentId": null, "region": "NA" },
+  { "id": "A-012", "name": "Blue Horizon Ventures", "domain": "bluehorizon.ai", "parentId": "A-011", "region": "NA" },
+  { "id": "A-013", "name": "Blue Horizon Venture", "domain": "bluehorizon.ai", "parentId": null, "region": "NA" }
+]

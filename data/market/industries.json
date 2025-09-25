@@ -1,0 +1,22 @@
+[
+  {
+    "industry": "Enterprise SaaS",
+    "regions": [
+      { "region": "NA", "tam": 4.8 },
+      { "region": "EMEA", "tam": 3.2 },
+      { "region": "APAC", "tam": 2.6 }
+    ],
+    "growth": 0.18,
+    "icpFit": 0.87
+  },
+  {
+    "industry": "Retail AI",
+    "regions": [
+      { "region": "NA", "tam": 2.1 },
+      { "region": "EMEA", "tam": 1.4 },
+      { "region": "LATAM", "tam": 0.9 }
+    ],
+    "growth": 0.22,
+    "icpFit": 0.73
+  }
+]
