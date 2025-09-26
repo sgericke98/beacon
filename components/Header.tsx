@@ -1,8 +1,9 @@
 "use client";
 
-import { Bell, Menu, Search, Sparkles, Rows, ArrowDownRight, ArrowUpRight, Download, BadgeCheck } from "@/lib/lucide-react";
+import { Bell, Menu, Search, Sparkles, Rows, ArrowDownRight, ArrowUpRight, Download, BadgeCheck, Wrench } from "@/lib/lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -31,6 +32,8 @@ export function Header({ onOpenSidebar }: HeaderProps) {
   const toggleFallback = useWorkspaceStore((state) => state.toggleFallback);
   const latency = useWorkspaceStore((state) => state.latency);
   const cycleLatency = useWorkspaceStore((state) => state.cycleLatency);
+  const developerMode = useWorkspaceStore((state) => state.developerMode);
+  const toggleDeveloperMode = useWorkspaceStore((state) => state.toggleDeveloperMode);
 
   const unreadCount = notifications.filter((entry) => !entry.read).length;
   const activeTabLabel = topTabs.find((tab) => tab.id === activeTab)?.label ?? "Overview";
@@ -52,6 +55,11 @@ export function Header({ onOpenSidebar }: HeaderProps) {
           <span>Beacon</span>
         </div>
         <span className="hidden text-xs uppercase tracking-wide text-muted-foreground sm:inline">{activeTabLabel}</span>
+        {developerMode && (
+          <Badge variant="outline" className="hidden border-primary/50 text-[10px] uppercase tracking-wide text-primary sm:inline-flex">
+            Dev mode
+          </Badge>
+        )}
       </div>
       <div className="flex flex-1 flex-wrap items-center gap-3">
         <div className="relative flex-1 min-w-[220px] sm:min-w-[260px]">
@@ -143,6 +151,9 @@ export function Header({ onOpenSidebar }: HeaderProps) {
             </DropdownMenuItem>
             <DropdownMenuItem onClick={toggleFallback} className="gap-2">
               <Download className="h-4 w-4" /> Fallback {fallbackMode ? "active" : "off"}
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={toggleDeveloperMode} className="gap-2">
+              <Wrench className="h-4 w-4" /> Developer mode {developerMode ? "on" : "off"}
             </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={cycleLatency} className="gap-2">

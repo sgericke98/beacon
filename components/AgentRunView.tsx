@@ -8,8 +8,10 @@ import { TraceConsole } from "@/components/TraceConsole";
 import { KPI } from "@/components/KPI";
 import { ArtifactCard } from "@/components/ArtifactCard";
 import { Button } from "@/components/ui/button";
+import { AutomationLogPanel } from "@/components/AutomationLogPanel";
 import { runAgentAndSummarize } from "@/lib/agentRunner";
 import { useAgentContext } from "@/store/agent-context";
+import { useWorkspaceStore } from "@/store/workspace-store";
 
 interface AgentRunViewProps {
   agent: AgentDefinition;
@@ -29,6 +31,7 @@ export function AgentRunView({ agent }: AgentRunViewProps) {
   const cancelRef = useRef<() => void>();
   const activeRef = useRef<AgentStepId | null>(null);
   const runStartRef = useRef<number>(Date.now());
+  const developerMode = useWorkspaceStore((state) => state.developerMode);
 
   const resetState = useCallback(() => {
     setLogs([]);
@@ -128,16 +131,29 @@ export function AgentRunView({ agent }: AgentRunViewProps) {
       <FiltersBar filters={agent.filters} values={filters} onChange={handleFilterChange} disabled={running} />
 
       <section className="space-y-6">
-        <Stepper steps={agent.steps} activeStepId={activeStep} completedSteps={completedSteps} />
-        <div className="grid gap-6 lg:grid-cols-[2fr_3fr]">
-          <TraceConsole logs={logs} />
+        {developerMode && (
+          <div className="rounded-3xl border border-dashed border-primary/30 bg-primary/5 p-4">
+            <p className="text-xs uppercase tracking-wide text-primary">Developer mode · raw stepper</p>
+            <div className="mt-3 overflow-x-auto">
+              <Stepper steps={agent.steps} activeStepId={activeStep} completedSteps={completedSteps} />
+            </div>
+          </div>
+        )}
+        <div className="grid gap-6 lg:grid-cols-[3fr_2fr]">
+          <AutomationLogPanel
+            logs={logs}
+            steps={agent.steps}
+            activeStepId={activeStep}
+            completedSteps={completedSteps}
+          />
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-muted-foreground">Key metrics</h3>
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2">
               {kpis.map((item) => (
                 <KPI key={item.id} item={item} />
               ))}
             </div>
+            {developerMode && <TraceConsole logs={logs} />}
           </div>
         </div>
       </section>
