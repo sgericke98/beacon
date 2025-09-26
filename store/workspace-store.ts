@@ -44,6 +44,7 @@ interface WorkspaceState {
   notifications: NotificationEntry[];
   language: "en" | "es";
   showImpactPanel: boolean;
+  developerMode: boolean;
   markNotification: (id: string, read: boolean) => void;
   setPersona: (id: PersonaId) => void;
   setAccount: (id: AccountId) => void;
@@ -57,6 +58,7 @@ interface WorkspaceState {
   toggleFallback: () => void;
   cycleLatency: () => void;
   setLanguage: (lang: "en" | "es") => void;
+  toggleDeveloperMode: () => void;
   resetDemo: () => void;
 }
 
@@ -81,6 +83,7 @@ export const useWorkspaceStore = create<WorkspaceState>((set, get) => ({
   notifications: initialNotifications,
   language: "en",
   showImpactPanel: false,
+  developerMode: false,
   markNotification: (id, read) =>
     set(({ notifications }) => ({
       notifications: notifications.map((entry) =>
@@ -107,6 +110,7 @@ export const useWorkspaceStore = create<WorkspaceState>((set, get) => ({
   toggleGuided: () => set((state) => ({ demoGuided: !state.demoGuided })),
   toggleFastForward: () => set((state) => ({ fastForward: !state.fastForward })),
   toggleFallback: () => set((state) => ({ fallbackMode: !state.fallbackMode })),
+  toggleDeveloperMode: () => set((state) => ({ developerMode: !state.developerMode })),
   cycleLatency: () => {
     const current = get().latency;
     const next = current === "instant" ? "normal" : current === "normal" ? "dramatic" : "instant";
@@ -129,6 +133,7 @@ export const useWorkspaceStore = create<WorkspaceState>((set, get) => ({
       notifications: initialNotifications,
       language: "en",
       showImpactPanel: false,
+      developerMode: false,
     }),
 }));
 

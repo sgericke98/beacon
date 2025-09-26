@@ -11,6 +11,15 @@ pnpm dev
 
 The development server runs at [http://localhost:3000](http://localhost:3000). All data is local so the experience works fully offline.
 
+### Production build
+
+```bash
+pnpm build
+```
+
+> **Note**
+> In locked-down environments without access to the public npm registry you may see 403 errors when installing dependencies such as `framer-motion`. Mirror the registry or pre-seed the `node_modules` directory before running the build.
+
 ## Core agents
 
 | Agent | Vertical | Highlights |
