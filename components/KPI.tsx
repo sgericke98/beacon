@@ -1,6 +1,6 @@
 import type { KPIValue } from "@/lib/types";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowDownRight, ArrowUpRight } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight } from "@/lib/lucide-react";
 
 interface KPIProps {
   item: KPIValue;

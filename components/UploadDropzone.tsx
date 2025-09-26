@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { Upload } from "lucide-react";
+import { Upload } from "@/lib/lucide-react";
 
 interface UploadDropzoneProps {
   onFiles: (files: string[]) => void;

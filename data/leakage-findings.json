@@ -1,0 +1,5 @@
+[
+  { "id": "LF-001", "account": "Globex", "impactUSD": 120000, "rootCause": "Discount override" },
+  { "id": "LF-002", "account": "Acme", "impactUSD": 78000, "rootCause": "Missing tax code" },
+  { "id": "LF-003", "account": "Initech", "impactUSD": 42000, "rootCause": "Delayed invoice" }
+]

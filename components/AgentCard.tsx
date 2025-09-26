@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { AgentDefinition } from "@/lib/types";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "@/lib/lucide-react";
 
 interface AgentCardProps {
   agent: AgentDefinition;
