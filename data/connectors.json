@@ -1,0 +1,5 @@
+[
+  { "id": "salesforce", "name": "Salesforce CRM", "status": "mock", "lastSyncHours": 2 },
+  { "id": "netsuite", "name": "NetSuite ERP", "status": "mock", "lastSyncHours": 1 },
+  { "id": "workday", "name": "Workday HCM", "status": "planned", "lastSyncHours": 6 }
+]

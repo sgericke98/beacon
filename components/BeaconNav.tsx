@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Activity, FileWarning, Layers, Newspaper, Table, Wrench } from "lucide-react";
-import type { IconProps } from "lucide-react";
+import { Activity, FileWarning, Layers, Newspaper, Table, Wrench } from "@/lib/lucide-react";
+import type { IconProps } from "@/lib/lucide-react";
 
 const NAV_ITEMS: Array<{ name: string; href: string; icon: (props: IconProps) => JSX.Element }> = [
   { name: "Setup", href: "/setup", icon: Wrench },

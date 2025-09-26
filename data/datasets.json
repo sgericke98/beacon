@@ -1,0 +1,7 @@
+[
+  { "id": "accounts", "rowCount": 1264, "source": "CRM" },
+  { "id": "opportunities", "rowCount": 412, "source": "CRM" },
+  { "id": "invoices", "rowCount": 238, "source": "ERP" },
+  { "id": "payments", "rowCount": 221, "source": "ERP" },
+  { "id": "employees", "rowCount": 156, "source": "HR" }
+]

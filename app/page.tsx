@@ -1,30 +1,38 @@
-import { AgentGrid } from "@/components/AgentGrid";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+"use client";
+
+import { WorkspaceContextBar } from "@/components/beacon/WorkspaceContextBar";
+import { WorkspaceTabs } from "@/components/beacon/WorkspaceTabs";
+import { OverviewTab } from "@/components/beacon/tabs/OverviewTab";
+import { EntitiesTab } from "@/components/beacon/tabs/EntitiesTab";
+import { AgentsTab } from "@/components/beacon/tabs/AgentsTab";
+import { WorkflowsTab } from "@/components/beacon/tabs/WorkflowsTab";
+import { ArtifactsTab } from "@/components/beacon/tabs/ArtifactsTab";
+import { DeliverablesTab } from "@/components/beacon/tabs/DeliverablesTab";
+import { AnalyticsTab } from "@/components/beacon/tabs/AnalyticsTab";
+import { SecurityTab } from "@/components/beacon/tabs/SecurityTab";
+import { RoadmapTab } from "@/components/beacon/tabs/RoadmapTab";
+import { SettingsTab } from "@/components/beacon/tabs/SettingsTab";
+import { useWorkspaceStore } from "@/store/workspace-store";
 
 export default function HomePage() {
+  const activeTab = useWorkspaceStore((state) => state.activeTab);
+
   return (
-    <div className="space-y-12">
-      <section className="rounded-3xl border border-border bg-gradient-to-br from-primary/10 via-background to-background p-10 shadow-xl">
-        <div className="space-y-6">
-          <p className="text-sm uppercase tracking-wide text-primary">Beacon demo</p>
-          <h1 className="text-4xl font-semibold text-foreground">Orchestrate revenue with agentic copilots</h1>
-          <p className="max-w-3xl text-lg text-muted-foreground">
-            Explore five fully mocked agents that showcase Beacon&apos;s agentic workflow. Each run executes Plan → Gather → Analyze → Recommend → Draft steps, streaming traces, KPIs, and shareable artifacts.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/agents/revenue-leakage">
-              <Button size="lg">Start with Revenue Leakage</Button>
-            </Link>
-            <Link href="/agents/market-research">
-              <Button size="lg" variant="outline">
-                View market brief demo
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-      <AgentGrid />
+    <div className="space-y-8">
+      <WorkspaceContextBar />
+      <WorkspaceTabs />
+      <div className="space-y-8">
+        {activeTab === "overview" && <OverviewTab />}
+        {activeTab === "entities" && <EntitiesTab />}
+        {activeTab === "agents" && <AgentsTab />}
+        {activeTab === "workflows" && <WorkflowsTab />}
+        {activeTab === "artifacts" && <ArtifactsTab />}
+        {activeTab === "deliverables" && <DeliverablesTab />}
+        {activeTab === "analytics" && <AnalyticsTab />}
+        {activeTab === "security" && <SecurityTab />}
+        {activeTab === "roadmap" && <RoadmapTab />}
+        {activeTab === "settings" && <SettingsTab />}
+      </div>
     </div>
   );
 }

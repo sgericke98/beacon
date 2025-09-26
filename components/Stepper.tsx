@@ -1,5 +1,5 @@
 import type { AgentStep, AgentStepId } from "@/lib/types";
-import { Check } from "lucide-react";
+import { Check } from "@/lib/lucide-react";
 
 interface StepperProps {
   steps: AgentStep[];
